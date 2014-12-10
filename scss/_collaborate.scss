@@ -1,0 +1,63 @@
+.collaborate {
+  font-family: 'Raleway';
+  background: url("http://41.media.tumblr.com/9fe00a32b68039fa7f815564c455f83b/tumblr_ndyvtryKo71tubinno1_1280.jpg");
+  background-size: cover;
+
+  .hero {
+    height: 100%;
+    /* Rectangle 11: */
+    background: rgb(119,106,47); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(119,106,47,.8) 6%, rgba(119,106,47,.8) 14%, rgba(119,106,47,.8) 15%, rgba(119,106,47,.8) 15%, rgba(0,0,0,.8) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(6%,rgba(119,106,47,1)), color-stop(14%,rgba(119,106,47,1)), color-stop(15%,rgba(119,106,47,1)), color-stop(15%,rgba(119,106,47,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(119,106,47,.8) 6%,rgba(119,106,47,.8) 14%,rgba(119,106,47,.8) 15%,rgba(119,106,47,.8) 15%,rgba(0,0,0,.8) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(119,106,47,.8) 6%,rgba(119,106,47,.8) 14%,rgba(119,106,47,.8) 15%,rgba(119,106,47,.8) 15%,rgba(0,0,0,.8) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(119,106,47,.8) 6%,rgba(119,106,47,.8) 14%,rgba(119,106,47,.8) 15%,rgba(119,106,47,.8) 15%,rgba(0,0,0,.8) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(119,106,47,.8) 6%,rgba(119,106,47,.8) 14%,rgba(119,106,47,.8) 15%,rgba(119,106,47,.8) 15%,rgba(0,0,0,.8) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#776a2f', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    .menu {
+      position: relative;
+      top: 10%;
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 1.5em;
+      margin: 0 auto;
+      color: white;
+      text-align: center;
+      list-style: none;
+      width: 100%;
+      transition: .5s;
+      padding: 0;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+
+      li {
+        &:hover {
+          background: transparentize(#E1C758, 0.5);
+          transition: .5s;
+          cursor: pointer;
+
+        }
+      }
+    }
+    .lockup {
+      text-align: center;
+      margin: 0 auto;
+      color: white;
+      margin-top: 50%;
+      transform: translateY(-50%);
+      h1 {
+        font-weight: 600;
+        font-family: 'Raleway';
+        font-size: 48px;
+        text-transform: uppercase;
+      }
+      h4 {
+        font-weight: 300;
+        font-family: 'Josefin Sans';
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

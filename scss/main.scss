@@ -1,0 +1,383 @@
+/* Initial Import */
+
+@import '_concise.scss';
+@import '_collaborate.scss'; /* remove when you get all your shit together */
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700,400italic,600italic);
+@import '_fontello.scss';
+
+/* Mixins, Functions, Placeholders, Variables */
+
+/* Mixins */
+@mixin cover($url) {
+  background: url($url) no-repeat center center;
+  background-size: cover;
+}
+
+
+@mixin contain($url) {
+  background: url($url) no-repeat center center;
+  background-size: contain;
+}
+
+@mixin centerer {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Variables */
+$primary-font: 'Josefin Sans', Helvetica, sans-serif;
+$secondary-font: 'Josefin Sans', Arial, Helvetica, sans-serif;
+$hero-height: 110vh;
+$primary-color: #E0C657;
+$secondary-color: #2d3e50;
+$red: #b22222;
+$hero: '../img/hero.jpg';
+$trans: .3s ease;
+
+%after-shadow {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: transparentize(black, 0.2);
+  transition: $trans;
+}
+
+/* Placeholders */
+%center {
+  text-align: center;
+}
+
+/* Globals */
+
+a {
+  color: #333!important;
+}
+
+/* Center Text Divs */
+.about,
+.map,
+.contact {
+  @extend %center;
+}
+
+.edu-exp {
+  display: none;
+}
+
+.section {
+  h4 {
+    border-top: 3px solid $red;
+    padding: 10px;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: $primary-font;
+}
+
+ul {
+  margin-left: 0;
+}
+
+p,
+li {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 600;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-size: 1.3em;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body {
+  background: #fafafa; /* matching hero img */
+  font-family: $primary-font;
+}
+
+/* Hero */
+.hero {
+  width: 100%;
+  position: relative;
+
+  .hero-lockup {
+    position: absolute;
+    bottom: 70px;
+    text-align: center;
+
+
+    h1, h3 {
+      margin: 0;
+      font-weight: 300;
+    }
+
+    h1 {
+      font-family: $primary-font;
+      font-size: 50px;
+      line-height: 46px;
+      margin-bottom: 20px;
+    }
+
+    .face {
+      height: 70px;
+      width: auto;
+      margin: 0 auto;
+      margin-bottom: 20px;
+
+    }
+  }
+
+  @media screen and (max-width: 600px) { // TODO: redo the positioning at a higher resolution//
+
+    .lockup {
+      position: initial;
+      margin: 0 auto;
+      margin-top: -50px;
+
+      h1 {
+        font-size: 30px;
+      }
+      h3 {
+        font-size: 1em;
+      }
+    }
+  }
+
+}
+
+
+/* Navigation */
+.nav.row {
+  margin: 0;
+}
+
+.navbar {
+  height: 70px;
+  width: 100%;
+  background: transparentize(#f1f1f1, .05);
+  box-shadow:         0px 2px 4px 0px rgba(0,0,0,0.50);
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+
+  ul {
+    text-align: center;
+    margin: 0;
+    line-height: 88px;
+
+    li {
+      display: inline-block;
+      margin-right: 50px;
+      /* padding-top: 3px; don't know why this is here */
+      padding-bottom: 6px;
+      transition: $trans;
+
+      &:hover {
+        border-bottom: 5px solid $red;
+        transition: $trans;
+        cursor: pointer;
+      }
+      &.name {
+        font-family: $secondary-font;
+        font-size: 1.5em;
+        padding-bottom: 0;
+        text-transform: uppercase;
+
+        &:hover {
+          border: none;
+          cursor: pointer;
+        }
+
+      }
+    }
+  }
+}
+
+/* about */
+.about {
+  margin-top: -50px;
+}
+
+/* Skills */
+.skills {
+
+  ul {
+    text-align: center;
+  }
+  li {
+    display: inline-block;
+    font-size: 5em;
+    margin-right: 8%;
+    transition: $trans;
+
+    h4 {
+      &::after {
+        content: '';
+        width: 0px;
+        height: 2px;
+        background: $red;
+        display: block;
+        margin: 0 auto;
+        transition: $trans;
+      }
+    }
+
+    &:hover {
+      color: $red;
+      transition: $trans;
+
+      h4 {
+        color: $red;
+        font-weight: 600;
+
+        &::after {
+          content: '';
+          width: 100%;
+          transition: $trans;
+        }
+      }
+    }
+  }
+}
+
+
+/* footer */
+
+.footer {
+  margin: 100px 0;
+}
+
+.contact {
+  h3, h4, h6 {
+    margin: 0;
+  }
+  .email {
+    &:hover {
+      text-decoration: underline;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  .mwo-logo {
+    margin: 30px 0;
+    width: 10%;
+  }
+}
+
+.social {
+
+  li {
+    display: inline-block;
+    transition: $trans;
+
+    &:hover {
+      color: $red;
+      transition: $trans;
+    }
+  }
+}
+
+.posters{
+  @include cover('http://midwesternoriginals.com/img/projects/posters/japan-poster.png');
+}
+
+.lost{
+  @include cover('http://midwesternoriginals.com/img/covers/covers_lost-paradise.png');
+}
+
+.wanderlust {
+  @include cover('http://midwesternoriginals.com/img/covers/covers_wanderlust.png');
+}
+
+.work-block {
+  height: 70vh;
+  position: relative;
+
+  .project-lockup {
+    position: relative;
+    /* top: 50px; */
+    text-align: center;
+    z-index: 30;
+
+
+    h3 {
+      color: white;
+      /* margin: 0; */
+      display: inline-block;
+      margin-top: 130px;
+
+    }
+  }
+
+  .full {
+    height: 100%;
+
+    > div {
+      height: 100%;
+      position: relative;
+
+      &:after {
+        @extend %after-shadow;
+      }
+
+      &:hover {
+        &:after {
+          opacity: .1;
+          transition: $trans;
+        }
+      }
+    }
+  }
+
+  .half {
+    height: 100%;
+
+
+    .top-right,
+    .top-left {
+      height: 50%;
+      position: relative;
+
+      &:after {
+        @extend %after-shadow;
+        }
+
+        &:hover {
+          &:after {
+            opacity: .1;
+            transition: $trans;
+          }
+      }
+    }
+  }
+}
+
+
+#work,
+#about,
+#contact {
+  padding-top: 70px;
+}

@@ -1,0 +1,48 @@
+{
+    "education": [
+        {
+            "title": "University of Central Missouri",
+            "subtitle": "BFA Technical Theatre",
+            "date": "August 2007 - May 2008",
+            "description": "I never took the traditonal route of learning and employment. Due to this, a lot of my knowledge has been self taught, solidified by traditional design education, as well as on the job experience with development."
+        },
+        {
+          "title": "MCC - Longview",
+          "subtitle": "Associates in Art",
+          "date": "August 2007 - May 2008",
+          "description": "I never took the traditonal route of learning and employment. Due to this, a lot of my knowledge has been self taught, solidified by traditional design education, as well as on the job experience with development."
+        },
+        {
+          "title": "Art Institutes International - Minnesota",
+          "subtitle": "BFA Technical Theatre",
+          "date": "August 2007 - May 2008",
+          "description": "I never took the traditonal route of learning and employment. Due to this, a lot of my knowledge has been self taught, solidified by traditional design education, as well as on the job experience with development."
+        },
+        {
+          "title": "Art Institutes International - Kansas City",
+          "subtitle": "BFA Technical Theatre",
+          "date": "August 2007 - May 2008",
+          "description": "I never took the traditonal route of learning and employment. Due to this, a lot of my knowledge has been self taught, solidified by traditional design education, as well as on the job experience with development."
+        }
+    ],
+    "experience": [
+        {
+            "title": "FolioMatch",
+            "subtitle": "Creative Director",
+            "date": "May 2013 - October 2013",
+            "description": "blah blah blah blahblah blah balhablahabl ablah ablhja"
+        },
+        {
+          "title": "Briefcase",
+          "subtitle": "Director of User Experience",
+          "date": "May 2013 - October 2013",
+          "description": "blah blah blah blahblah blah balhablahabl ablah ablhja"
+        },
+        {
+          "title": "Code Koalas",
+          "subtitle": "Web Designer",
+          "date": "May 2013 - October 2013",
+          "description": "blah blah blah blahblah blah balhablahabl ablah ablhja"
+        }
+    ]
+}

@@ -2684,7 +2684,7 @@ src: url('../font/fontello.svg?71268119#fontello') format('svg');
 /* Mixins */
 /* Variables */
 /* line 39, ../scss/main.scss */
-.work-block .full > div:after, .work-block .half .top-right:after,
+.work-block .full .full-project:after, .work-block .half .top-right:after,
 .work-block .half .top-left:after {
   content: '';
   position: absolute;
@@ -2778,24 +2778,28 @@ body {
   position: relative;
 }
 /* line 122, ../scss/main.scss */
+.hero img {
+  width: 100%;
+}
+/* line 125, ../scss/main.scss */
 .hero .hero-lockup {
   position: absolute;
   bottom: 70px;
   text-align: center;
 }
-/* line 128, ../scss/main.scss */
+/* line 131, ../scss/main.scss */
 .hero .hero-lockup h1, .hero .hero-lockup h3 {
   margin: 0;
   font-weight: 300;
 }
-/* line 133, ../scss/main.scss */
+/* line 136, ../scss/main.scss */
 .hero .hero-lockup h1 {
   font-family: "Josefin Sans", Helvetica, sans-serif;
   font-size: 50px;
   line-height: 46px;
   margin-bottom: 20px;
 }
-/* line 140, ../scss/main.scss */
+/* line 143, ../scss/main.scss */
 .hero .hero-lockup .face {
   height: 70px;
   width: auto;
@@ -2803,29 +2807,29 @@ body {
   margin-bottom: 20px;
 }
 @media screen and (max-width: 600px) {
-  /* line 151, ../scss/main.scss */
+  /* line 154, ../scss/main.scss */
   .hero .lockup {
     position: initial;
     margin: 0 auto;
     margin-top: -50px;
   }
-  /* line 156, ../scss/main.scss */
+  /* line 159, ../scss/main.scss */
   .hero .lockup h1 {
     font-size: 30px;
   }
-  /* line 159, ../scss/main.scss */
+  /* line 162, ../scss/main.scss */
   .hero .lockup h3 {
     font-size: 1em;
   }
 }
 
 /* Navigation */
-/* line 169, ../scss/main.scss */
+/* line 172, ../scss/main.scss */
 .nav.row {
   margin: 0;
 }
 
-/* line 173, ../scss/main.scss */
+/* line 176, ../scss/main.scss */
 .navbar {
   height: 70px;
   width: 100%;
@@ -2836,18 +2840,18 @@ body {
   top: 0;
 }
 @media screen and (max-width: 800px) {
-  /* line 173, ../scss/main.scss */
+  /* line 176, ../scss/main.scss */
   .navbar {
     display: none;
   }
 }
-/* line 185, ../scss/main.scss */
+/* line 188, ../scss/main.scss */
 .navbar ul {
   text-align: center;
   margin: 0;
   line-height: 88px;
 }
-/* line 190, ../scss/main.scss */
+/* line 193, ../scss/main.scss */
 .navbar ul li {
   display: inline-block;
   margin-right: 50px;
@@ -2856,38 +2860,38 @@ body {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-/* line 197, ../scss/main.scss */
+/* line 200, ../scss/main.scss */
 .navbar ul li:hover {
   border-bottom: 5px solid #b22222;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   cursor: pointer;
 }
-/* line 202, ../scss/main.scss */
+/* line 205, ../scss/main.scss */
 .navbar ul li.name {
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   font-size: 1.5em;
   padding-bottom: 0;
   text-transform: uppercase;
 }
-/* line 208, ../scss/main.scss */
+/* line 211, ../scss/main.scss */
 .navbar ul li.name:hover {
   border: none;
   cursor: pointer;
 }
 
 /* about */
-/* line 219, ../scss/main.scss */
+/* line 222, ../scss/main.scss */
 .about {
   margin-top: -50px;
 }
 
 /* Skills */
-/* line 226, ../scss/main.scss */
+/* line 229, ../scss/main.scss */
 .skills ul {
   text-align: center;
 }
-/* line 229, ../scss/main.scss */
+/* line 232, ../scss/main.scss */
 .skills li {
   display: inline-block;
   font-size: 5em;
@@ -2895,7 +2899,7 @@ body {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-/* line 236, ../scss/main.scss */
+/* line 239, ../scss/main.scss */
 .skills li h4::after {
   content: '';
   width: 0px;
@@ -2906,18 +2910,18 @@ body {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-/* line 247, ../scss/main.scss */
+/* line 250, ../scss/main.scss */
 .skills li:hover {
   color: #b22222;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-/* line 251, ../scss/main.scss */
+/* line 254, ../scss/main.scss */
 .skills li:hover h4 {
   color: #b22222;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
-/* line 255, ../scss/main.scss */
+/* line 258, ../scss/main.scss */
 .skills li:hover h4::after {
   content: '';
   width: 100%;
@@ -2926,103 +2930,135 @@ body {
 }
 
 /* footer */
-/* line 268, ../scss/main.scss */
+/* line 271, ../scss/main.scss */
 .footer {
   margin: 100px 0;
 }
 
-/* line 273, ../scss/main.scss */
+/* line 276, ../scss/main.scss */
 .contact h3, .contact h4, .contact h6 {
   margin: 0;
 }
-/* line 277, ../scss/main.scss */
+/* line 280, ../scss/main.scss */
 .contact .email:hover {
   text-decoration: underline;
   font-weight: 600;
   cursor: pointer;
 }
-/* line 284, ../scss/main.scss */
+/* line 287, ../scss/main.scss */
 .contact .mwo-logo {
   margin: 30px 0;
   width: 10%;
 }
 
-/* line 292, ../scss/main.scss */
+/* line 295, ../scss/main.scss */
 .social li {
   display: inline-block;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-/* line 296, ../scss/main.scss */
+/* line 299, ../scss/main.scss */
 .social li:hover {
   color: #b22222;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
-/* line 303, ../scss/main.scss */
+/* line 306, ../scss/main.scss */
 .posters {
   background: url("http://midwesternoriginals.com/img/projects/posters/japan-poster.png") no-repeat center center;
   background-size: cover;
+  height: 100%;
 }
 
-/* line 307, ../scss/main.scss */
+/* line 311, ../scss/main.scss */
 .lost {
   background: url("http://midwesternoriginals.com/img/covers/covers_lost-paradise.png") no-repeat center center;
   background-size: cover;
 }
 
-/* line 311, ../scss/main.scss */
+/* line 315, ../scss/main.scss */
 .wanderlust {
   background: url("http://midwesternoriginals.com/img/covers/covers_wanderlust.png") no-repeat center center;
   background-size: cover;
 }
 
-/* line 315, ../scss/main.scss */
+/* line 319, ../scss/main.scss */
 .work-block {
   height: 70vh;
   position: relative;
 }
-/* line 319, ../scss/main.scss */
+/* line 323, ../scss/main.scss */
 .work-block .project-lockup {
+  /* @extend centerer; */
   position: relative;
   /* top: 50px; */
   text-align: center;
   z-index: 30;
 }
-/* line 326, ../scss/main.scss */
-.work-block .project-lockup h3 {
+/* line 330, ../scss/main.scss */
+.work-block .project-lockup h1,
+.work-block .project-lockup h2,
+.work-block .project-lockup h3,
+.work-block .project-lockup h4,
+.work-block .project-lockup h5,
+.work-block .project-lockup h6,
+.work-block .project-lockup p {
   color: white;
-  /* margin: 0; */
+  margin: 0;
   display: inline-block;
-  margin-top: 130px;
+  width: 100%;
 }
-/* line 335, ../scss/main.scss */
+/* line 346, ../scss/main.scss */
 .work-block .full {
   height: 100%;
 }
-/* line 338, ../scss/main.scss */
-.work-block .full > div {
+/* line 349, ../scss/main.scss */
+.work-block .full .full-project {
   height: 100%;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-/* line 347, ../scss/main.scss */
-.work-block .full > div:hover:after {
+/* line 361, ../scss/main.scss */
+.work-block .full .full-project:hover:after {
   opacity: .1;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-/* line 355, ../scss/main.scss */
+/* line 369, ../scss/main.scss */
 .work-block .half {
   height: 100%;
 }
-/* line 359, ../scss/main.scss */
+/* line 373, ../scss/main.scss */
 .work-block .half .top-right,
 .work-block .half .top-left {
   height: 50%;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-/* line 369, ../scss/main.scss */
+/* line 390, ../scss/main.scss */
 .work-block .half .top-right:hover:after,
 .work-block .half .top-left:hover:after {
   opacity: .1;
@@ -3030,7 +3066,7 @@ body {
   transition: 0.3s ease;
 }
 
-/* line 379, ../scss/main.scss */
+/* line 400, ../scss/main.scss */
 #work,
 #about,
 #contact {

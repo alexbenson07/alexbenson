@@ -342,6 +342,12 @@ body {
   height: 70vh;
   position: relative;
 
+  &:hover {
+    .project-lockup {
+      opacity: 0;
+    }
+  }
+
   .project-lockup {
     /* @extend centerer; */
     position: relative;

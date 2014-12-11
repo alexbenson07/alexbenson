@@ -178,8 +178,8 @@ body {
 .mobile-nav {
   height: 50px;
   width: 50px;
-  background: black;
-  position: absolute;
+  background: transparentize(black, 0.5);
+  position: fixed;
   top: 5px;
   right: 5px;
   cursor: pointer;

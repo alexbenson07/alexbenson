@@ -2835,8 +2835,8 @@ body {
 .mobile-nav {
   height: 50px;
   width: 50px;
-  background: black;
-  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
   top: 5px;
   right: 5px;
   cursor: pointer;

@@ -342,11 +342,7 @@ body {
   height: 70vh;
   position: relative;
 
-  &:hover {
-    .project-lockup {
-      opacity: 0;
-    }
-  }
+
 
   .project-lockup {
     /* @extend centerer; */
@@ -381,6 +377,12 @@ body {
       justify-content: center;
       align-items: center;
 
+      &:hover {
+        .project-lockup {
+          opacity: 0;
+        }
+      }
+
       &:after {
         @extend %after-shadow;
       }
@@ -407,6 +409,12 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      &:hover {
+        .project-lockup {
+          opacity: 0;
+        }
+      }
 
       .project-lockup {
 

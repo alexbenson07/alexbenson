@@ -49,6 +49,7 @@ $trans: .3s ease;
 }
 
 /* Placeholders */
+
 %center {
   text-align: center;
 }
@@ -66,8 +67,8 @@ a {
   @extend %center;
 }
 
-.edu-exp {
-  display: none;
+.mobile-title {
+  color: transparent;
 }
 
 .section {
@@ -370,6 +371,8 @@ body {
     height: 100%;
 
 
+
+
     .top-right,
     .top-left {
       height: 50%;
@@ -379,7 +382,7 @@ body {
       align-items: center;
 
       .project-lockup {
-        
+
       }
 
       &:after {
@@ -401,4 +404,50 @@ body {
 #about,
 #contact {
   padding-top: 70px;
+}
+
+
+.edu-exp {
+
+  body, h1, h2, h3, h4, h5, h6, p {
+    margin: 5px auto;
+  }
+
+
+
+
+  .education-block {
+    text-align: right;
+    padding-right: 15px;
+    border-right: 1px solid #333;
+
+    .experience-post {
+      margin-top: 20px;
+    }
+  }
+
+
+  .experience-block {
+    padding-left: 15px;
+    margin-top: 100px;
+
+    .experience-post {
+        margin-bottom: 50px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .experience-block,
+    .education-block {
+      width: 80%;
+      margin-left: 10%;
+      text-align: center;
+      border: none;
+      padding: 0;
+
+      .mobile-title {
+        color: blue;
+      }
+    }
+  }
 }

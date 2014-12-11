@@ -128,6 +128,11 @@ body {
     bottom: 70px;
     text-align: center;
 
+    @media screen and (max-width: 800px) {
+      bottom: -20px;
+      width: 100%;
+    }
+
 
     h1, h3 {
       margin: 0;
@@ -222,6 +227,11 @@ body {
 /* about */
 .about {
   margin-top: -50px;
+
+  @media screen and (max-width: 800px) {
+    width: 90%;
+    margin-left: 5%;
+  }
 }
 
 /* Skills */
@@ -408,6 +418,10 @@ body {
 
 
 .edu-exp {
+
+  @media screen and (max-width: 800px) {
+    margin-top: 620px;
+  }
 
   body, h1, h2, h3, h4, h5, h6, p {
     margin: 5px auto;

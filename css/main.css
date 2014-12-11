@@ -2787,19 +2787,26 @@ body {
   bottom: 70px;
   text-align: center;
 }
-/* line 132, ../scss/main.scss */
+@media screen and (max-width: 800px) {
+  /* line 126, ../scss/main.scss */
+  .hero .hero-lockup {
+    bottom: -20px;
+    width: 100%;
+  }
+}
+/* line 137, ../scss/main.scss */
 .hero .hero-lockup h1, .hero .hero-lockup h3 {
   margin: 0;
   font-weight: 300;
 }
-/* line 137, ../scss/main.scss */
+/* line 142, ../scss/main.scss */
 .hero .hero-lockup h1 {
   font-family: "Josefin Sans", Helvetica, sans-serif;
   font-size: 50px;
   line-height: 46px;
   margin-bottom: 20px;
 }
-/* line 144, ../scss/main.scss */
+/* line 149, ../scss/main.scss */
 .hero .hero-lockup .face {
   height: 70px;
   width: auto;
@@ -2807,29 +2814,29 @@ body {
   margin-bottom: 20px;
 }
 @media screen and (max-width: 600px) {
-  /* line 155, ../scss/main.scss */
+  /* line 160, ../scss/main.scss */
   .hero .lockup {
     position: initial;
     margin: 0 auto;
     margin-top: -50px;
   }
-  /* line 160, ../scss/main.scss */
+  /* line 165, ../scss/main.scss */
   .hero .lockup h1 {
     font-size: 30px;
   }
-  /* line 163, ../scss/main.scss */
+  /* line 168, ../scss/main.scss */
   .hero .lockup h3 {
     font-size: 1em;
   }
 }
 
 /* Navigation */
-/* line 173, ../scss/main.scss */
+/* line 178, ../scss/main.scss */
 .nav.row {
   margin: 0;
 }
 
-/* line 177, ../scss/main.scss */
+/* line 182, ../scss/main.scss */
 .navbar {
   height: 70px;
   width: 100%;
@@ -2840,18 +2847,18 @@ body {
   top: 0;
 }
 @media screen and (max-width: 800px) {
-  /* line 177, ../scss/main.scss */
+  /* line 182, ../scss/main.scss */
   .navbar {
     display: none;
   }
 }
-/* line 189, ../scss/main.scss */
+/* line 194, ../scss/main.scss */
 .navbar ul {
   text-align: center;
   margin: 0;
   line-height: 88px;
 }
-/* line 194, ../scss/main.scss */
+/* line 199, ../scss/main.scss */
 .navbar ul li {
   display: inline-block;
   margin-right: 50px;
@@ -2860,38 +2867,45 @@ body {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-/* line 201, ../scss/main.scss */
+/* line 206, ../scss/main.scss */
 .navbar ul li:hover {
   border-bottom: 5px solid #b22222;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   cursor: pointer;
 }
-/* line 206, ../scss/main.scss */
+/* line 211, ../scss/main.scss */
 .navbar ul li.name {
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   font-size: 1.5em;
   padding-bottom: 0;
   text-transform: uppercase;
 }
-/* line 212, ../scss/main.scss */
+/* line 217, ../scss/main.scss */
 .navbar ul li.name:hover {
   border: none;
   cursor: pointer;
 }
 
 /* about */
-/* line 223, ../scss/main.scss */
+/* line 228, ../scss/main.scss */
 .about {
   margin-top: -50px;
 }
+@media screen and (max-width: 800px) {
+  /* line 228, ../scss/main.scss */
+  .about {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
 
 /* Skills */
-/* line 230, ../scss/main.scss */
+/* line 240, ../scss/main.scss */
 .skills ul {
   text-align: center;
 }
-/* line 233, ../scss/main.scss */
+/* line 243, ../scss/main.scss */
 .skills li {
   display: inline-block;
   font-size: 5em;
@@ -2899,7 +2913,7 @@ body {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-/* line 240, ../scss/main.scss */
+/* line 250, ../scss/main.scss */
 .skills li h4::after {
   content: '';
   width: 0px;
@@ -2910,18 +2924,18 @@ body {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-/* line 251, ../scss/main.scss */
+/* line 261, ../scss/main.scss */
 .skills li:hover {
   color: #b22222;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-/* line 255, ../scss/main.scss */
+/* line 265, ../scss/main.scss */
 .skills li:hover h4 {
   color: #b22222;
   /* font-weight: 600; */
 }
-/* line 259, ../scss/main.scss */
+/* line 269, ../scss/main.scss */
 .skills li:hover h4::after {
   content: '';
   width: 100%;
@@ -2930,65 +2944,65 @@ body {
 }
 
 /* footer */
-/* line 272, ../scss/main.scss */
+/* line 282, ../scss/main.scss */
 .footer {
   margin: 100px 0;
 }
 
-/* line 277, ../scss/main.scss */
+/* line 287, ../scss/main.scss */
 .contact h3, .contact h4, .contact h6 {
   margin: 0;
 }
-/* line 281, ../scss/main.scss */
+/* line 291, ../scss/main.scss */
 .contact .email:hover {
   text-decoration: underline;
   font-weight: 600;
   cursor: pointer;
 }
-/* line 288, ../scss/main.scss */
+/* line 298, ../scss/main.scss */
 .contact .mwo-logo {
   margin: 30px 0;
   width: 10%;
 }
 
-/* line 296, ../scss/main.scss */
+/* line 306, ../scss/main.scss */
 .social li {
   display: inline-block;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-/* line 300, ../scss/main.scss */
+/* line 310, ../scss/main.scss */
 .social li:hover {
   color: #b22222;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
-/* line 307, ../scss/main.scss */
+/* line 317, ../scss/main.scss */
 .posters {
   background: url("http://midwesternoriginals.com/img/projects/posters/japan-poster.png") no-repeat center center;
   background-size: cover;
   height: 100%;
 }
 
-/* line 312, ../scss/main.scss */
+/* line 322, ../scss/main.scss */
 .lost {
   background: url("http://midwesternoriginals.com/img/covers/covers_lost-paradise.png") no-repeat center center;
   background-size: cover;
 }
 
-/* line 316, ../scss/main.scss */
+/* line 326, ../scss/main.scss */
 .wanderlust {
   background: url("http://midwesternoriginals.com/img/covers/covers_wanderlust.png") no-repeat center center;
   background-size: cover;
 }
 
-/* line 320, ../scss/main.scss */
+/* line 330, ../scss/main.scss */
 .work-block {
   height: 70vh;
   position: relative;
 }
-/* line 324, ../scss/main.scss */
+/* line 334, ../scss/main.scss */
 .work-block .project-lockup {
   /* @extend centerer; */
   position: relative;
@@ -2996,7 +3010,7 @@ body {
   text-align: center;
   z-index: 30;
 }
-/* line 331, ../scss/main.scss */
+/* line 341, ../scss/main.scss */
 .work-block .project-lockup h1,
 .work-block .project-lockup h2,
 .work-block .project-lockup h3,
@@ -3009,11 +3023,11 @@ body {
   display: inline-block;
   width: 100%;
 }
-/* line 347, ../scss/main.scss */
+/* line 357, ../scss/main.scss */
 .work-block .full {
   height: 100%;
 }
-/* line 350, ../scss/main.scss */
+/* line 360, ../scss/main.scss */
 .work-block .full .full-project {
   height: 100%;
   position: relative;
@@ -3030,17 +3044,17 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-/* line 362, ../scss/main.scss */
+/* line 372, ../scss/main.scss */
 .work-block .full .full-project:hover:after {
   opacity: .1;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-/* line 370, ../scss/main.scss */
+/* line 380, ../scss/main.scss */
 .work-block .half {
   height: 100%;
 }
-/* line 376, ../scss/main.scss */
+/* line 386, ../scss/main.scss */
 .work-block .half .top-right,
 .work-block .half .top-left {
   height: 50%;
@@ -3058,7 +3072,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-/* line 393, ../scss/main.scss */
+/* line 403, ../scss/main.scss */
 .work-block .half .top-right:hover:after,
 .work-block .half .top-left:hover:after {
   opacity: .1;
@@ -3066,38 +3080,44 @@ body {
   transition: 0.3s ease;
 }
 
-/* line 403, ../scss/main.scss */
+/* line 413, ../scss/main.scss */
 #work,
 #about,
 #contact {
   padding-top: 70px;
 }
 
-/* line 412, ../scss/main.scss */
+@media screen and (max-width: 800px) {
+  /* line 420, ../scss/main.scss */
+  .edu-exp {
+    margin-top: 620px;
+  }
+}
+/* line 426, ../scss/main.scss */
 .edu-exp body, .edu-exp h1, .edu-exp h2, .edu-exp h3, .edu-exp h4, .edu-exp h5, .edu-exp h6, .edu-exp p {
   margin: 5px auto;
 }
-/* line 419, ../scss/main.scss */
+/* line 433, ../scss/main.scss */
 .edu-exp .education-block {
   text-align: right;
   padding-right: 15px;
   border-right: 1px solid #333;
 }
-/* line 424, ../scss/main.scss */
+/* line 438, ../scss/main.scss */
 .edu-exp .education-block .experience-post {
   margin-top: 20px;
 }
-/* line 430, ../scss/main.scss */
+/* line 444, ../scss/main.scss */
 .edu-exp .experience-block {
   padding-left: 15px;
   margin-top: 100px;
 }
-/* line 434, ../scss/main.scss */
+/* line 448, ../scss/main.scss */
 .edu-exp .experience-block .experience-post {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 800px) {
-  /* line 440, ../scss/main.scss */
+  /* line 454, ../scss/main.scss */
   .edu-exp .experience-block,
   .edu-exp .education-block {
     width: 80%;
@@ -3106,7 +3126,7 @@ body {
     border: none;
     padding: 0;
   }
-  /* line 448, ../scss/main.scss */
+  /* line 462, ../scss/main.scss */
   .edu-exp .experience-block .mobile-title,
   .edu-exp .education-block .mobile-title {
     color: blue;
